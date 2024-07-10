@@ -37,10 +37,11 @@
                 </div>
                 <div class="fieldbox">
                     <div class="field-holder">
-                        <input type="password" id="pass" name="pass" required><label for="pass">PASSWORD</label>
+                        <input type="password" id="pass" name="pass" minlength="8" required><label for="pass">PASSWORD</label>
                     </div>
                     <div class="field-holder">
                         <input type="password" id="pass-confirm" name="pass-confirm" required><label for="pass-confirm">CONFIRM PASSWORD</label>
+                        <p class="invalid hidden">*Passwords do not match</p>
                     </div>
                 </div>
                 <div class="submit-box">
