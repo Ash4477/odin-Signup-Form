@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-theme: #06aa5e;
+    --main-theme-2: #1d2b3a;
+    --font-color: white;
+}
+
+body{
+    background-color: var(--main-theme);
+}
+
+main{
+    width: 100%;
+    background-color: var(--main-theme);
+    font-family: "Poppins", sans-serif;
+    color: var(--font-color);
+    display: flex;
+}
+
+
+h1 {
+    font-weight: 600;
+    font-size: 2.5rem;
+    margin: 1rem;
+}
+
+h1 > span {
+    font-weight: bold;
+    margin: 0 0.5rem;
+    font-size: 1rem;
+    position: relative;
+    bottom: 1.8rem;
+}
+
+.sidebar > img {
+    width: 25rem;
+}
+
+
+.form-box{
+    background-color: var(--main-theme-2);
+    flex-grow: 3;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 3rem;
+    margin: 2rem 3rem;
+}
+
+.fieldbox {
+    margin: 2rem 3rem;
+    display: flex;
+    gap: 10rem;
+}
+
+.field-holder{
+    position: relative;
+    margin-bottom: 1.25rem;
+}
+
+input:not([type="submit"]){
+    background-color: var(--main-theme-2);
+    color: var(--font-color);
+    border: 0;
+    border-bottom: 1px solid black;
+    height: 45px;
+    border-radius: 10px;
+    outline: none;
+    padding: 0 1rem;
+    transition: border-color 0.3s ease;;
+}
+
+input:focus{
+    border: 1px solid var(--main-theme);
+}
+
+input:focus + label,
+input:valid + label {
+    color: var(--font-color);
+    background-color: #06aa5e;
+    font-size: 0.75rem;
+    padding: 0 0.5rem;
+    top: -10px;
+    pointer-events: none;
+}
+
+label {
+    color: rgb(150, 150, 150);
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    cursor: text;
+    transition: top 0.2s ease;
+}
+
+.submit-box {
+    margin: 2rem 3rem;
+}
+
+.submit-box > input {
+    background-color: var(--main-theme);
+    padding: 0.8rem 3rem;
+    border-radius: 5px;
+    color: var(--font-color);
+    border: 0;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.submit-box > p {
+    color: grey;
+    font-size: 0.9rem;
+    margin: 1rem 0;
+}
+
+.submit-box button {
+    color: var(--main-theme);
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
