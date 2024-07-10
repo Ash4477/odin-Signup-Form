@@ -15,6 +15,7 @@ body{
 
 main{
     width: 100%;
+    height: 100vh;
     background-color: var(--main-theme);
     font-family: "Poppins", sans-serif;
     color: var(--font-color);
