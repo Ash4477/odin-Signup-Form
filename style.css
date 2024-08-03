@@ -62,7 +62,6 @@ h2 {
 
 .field-holder{
     position: relative;
-    margin-bottom: 1.25rem;
 }
 
 input:not([type="submit"]){
@@ -77,6 +76,7 @@ input:not([type="submit"]){
     transition: border-color 0.3s ease;;
 }
 
+
 input:focus, input:valid{
     border: 1px solid var(--main-theme);
 }
@@ -90,6 +90,25 @@ input:valid + label {
     top: -10px;
     pointer-events: none;
 }
+
+
+input:invalid {
+    border: 1px solid var(--invalid-color);
+}
+
+ input:invalid + label{
+    color: var(--font-color);
+    background-color: var(--invalid-color);
+    font-size: 0.75rem;
+    padding: 0 0.5rem;
+    top: -10px;
+    pointer-events: none;
+} 
+
+input:invalid + label + .invalid {
+    visibility: visible;
+}
+
 
 label {
     color: rgb(150, 150, 150);
@@ -129,10 +148,12 @@ label {
 
 .invalid{
     font-size: 0.75rem;
-    margin: 0.5rem 0.5rem;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
     color: var(--invalid-color);
+    visibility: hidden;
 }
 
-.hidden{
-    visibility: hidden;
+.show {
+    visibility: visible;
 }

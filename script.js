@@ -2,16 +2,16 @@ function passMatchCheck() {
     const invalidText = document.querySelector("#pass-confirm + label + p");
     if (passKey.value != '' && passConfirmKey.value != '') {
         if (passKey.value !== passConfirmKey.value) {
-            invalidText.classList.remove("hidden"); 
+            invalidText.classList.add("show"); 
         }
 
         else {
-            invalidText.classList.add("hidden");
+            invalidText.classList.remove("show");
         }
     }
 
     else {
-        invalidText.classList.add("hidden");
+        invalidText.classList.remove("show");
     }
 }
 
