@@ -21,27 +21,29 @@
                 <h2>Get Started</h2>
                 <div class="fieldbox">
                     <div class="field-holder">
-                        <input type="text" id="fname" name="fname" required><label for="fname">FIRST NAME</label>
+                        <input type="text" id="fname" class="default-set" name="fname" ><label for="fname">FIRST NAME</label>
                     </div>
                     <div class="field-holder">
-                        <input type="text" id="lname" name="lname" required><label for="lname">LAST NAME</label>
-                    </div>
-                </div>
-                <div class="fieldbox">
-                    <div class="field-holder">
-                        <input type="email" id="email" name="email" pattern=".*\..*" required><label for="email">E-MAIL</label>
-                    </div>
-                    <div class="field-holder">
-                        <input type="tel" id="phone" name="phone" required><label for="phone">PHONE</label>
+                        <input type="text" id="lname" class="default-set" name="lname" ><label for="lname">LAST NAME</label>
                     </div>
                 </div>
                 <div class="fieldbox">
                     <div class="field-holder">
-                        <input type="password" id="pass" name="pass" minlength="8" required><label for="pass">PASSWORD</label>
+                        <input type="email" id="email" class="default-set" name="email" pattern=".*\..*" ><label for="email">E-MAIL</label>
+                        <p class="invalid">*Invalid format</p>
                     </div>
                     <div class="field-holder">
-                        <input type="password" id="pass-confirm" name="pass-confirm" required><label for="pass-confirm">CONFIRM PASSWORD</label>
-                        <p class="invalid hidden">*Passwords do not match</p>
+                        <input type="tel" id="phone" class="default-set" minlength="5" name="phone" ><label for="phone">PHONE</label>
+                        <p class="invalid">*Minimum 5 characters required</p>
+                    </div>
+                </div>
+                <div class="fieldbox">
+                    <div class="field-holder">
+                        <input type="password" id="pass" class="default-set" name="pass" minlength="8" ><label for="pass">PASSWORD</label>
+                    </div>
+                    <div class="field-holder">
+                        <input type="password" id="pass-confirm" class="default-set" name="pass-confirm" ><label for="pass-confirm">CONFIRM PASSWORD</label>
+                        <p class="invalid">*Passwords do not match</p>
                     </div>
                 </div>
                 <div class="submit-box">
